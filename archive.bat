@@ -1,2 +1,2 @@
-del /q F:\archive\spring-petclinic.rar
+del /q F:\archive
 D:\rar\WinRAR.exe a -r F:\archive\spring-petclinic.rar "F:\Рабочее пространство\Хакатон 2021 апрель\spring-petclinic"
