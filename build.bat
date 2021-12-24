@@ -1,2 +1,2 @@
-cd /d "F:\Рабочее пространство\Хакатон 2021 апрель\spring-petclinic"
+cd /d "F:\JobProject\JobJob\spring-petclinic"
 mvn clean package 
