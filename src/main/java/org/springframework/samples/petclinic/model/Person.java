@@ -59,6 +59,10 @@ public class Person extends BaseEntity {
 	}
 
 	public void setAge(int age) {
+		if (age > 150) {
+			throw new IllegalArgumentException("Age must be lower then 150 years");
+		}
+
 		this.age = age;
 	}
 
