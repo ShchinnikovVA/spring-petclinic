@@ -35,6 +35,9 @@ public class Person extends BaseEntity {
 	@NotEmpty
 	private String lastName;
 
+	@Column(name = "age")
+	private int age;
+
 	public String getFirstName() {
 		return this.firstName;
 	}
@@ -49,6 +52,18 @@ public class Person extends BaseEntity {
 
 	public void setLastName(String lastName) {
 		this.lastName = lastName;
+	}
+
+	public int getAge() {
+		return this.age;
+	}
+
+	public void setAge(int age) {
+		if (age > 150) {
+			throw new IllegalArgumentException("Age must be lower then 150 years");
+		}
+
+		this.age = age;
 	}
 
 }
